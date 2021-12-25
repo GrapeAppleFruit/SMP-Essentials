@@ -12,3 +12,9 @@ commands:
   feedme:
     description: Feed yourself.
     permission: op
+  smkick:
+    description: Kick players out of your smp.
+    permission: op
+  smban:
+    description: Freeze players who are not apart of the smp.
+    permission: op
