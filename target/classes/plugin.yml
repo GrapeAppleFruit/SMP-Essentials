@@ -1,0 +1,26 @@
+name: Plugin1
+version: '1.0-SNAPSHOT'
+main: dizzillian.xyz.plugin1.Plugin1
+api-version: 1.18
+commands:
+  sleep:
+    description: Sleep by using this command.
+    permission: op
+  healme:
+    description: Heal yourself.
+    permission: op
+  feedme:
+    description: Feed yourself.
+    permission: op
+  smkick:
+    description: Kick players out of your smp.
+    permission: op
+  smban:
+    description: .
+    permission: op
+  freeze:
+    description: Freeze a player.
+    permission: op
+  unfreeze:
+    description: Unfreeze a player.
+    permission: op

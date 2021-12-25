@@ -1,0 +1,10 @@
+dizzillian\xyz\plugin1\listeners\playercantsleep.class
+dizzillian\xyz\plugin1\commands\banCommand.class
+dizzillian\xyz\plugin1\listeners\playerJoin.class
+dizzillian\xyz\plugin1\commands\freezeCommand.class
+dizzillian\xyz\plugin1\commands\unfreezeCommand.class
+dizzillian\xyz\plugin1\Plugin1.class
+dizzillian\xyz\plugin1\commands\feedCommand.class
+dizzillian\xyz\plugin1\commands\helpCommand.class
+dizzillian\xyz\plugin1\commands\sleepCommand.class
+dizzillian\xyz\plugin1\commands\heallCommand.class
