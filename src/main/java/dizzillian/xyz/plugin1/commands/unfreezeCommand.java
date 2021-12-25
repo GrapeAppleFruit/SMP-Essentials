@@ -20,7 +20,7 @@ public class unfreezeCommand implements CommandExecutor {
                     } else {
                         Player target = Bukkit.getPlayerExact(args[0]);
                         if (target instanceof Player) {
-                            target.setWalkSpeed(02);
+                            target.setWalkSpeed(0.2F);
                             target.sendMessage("You've been unfrozen.");
                             p.sendMessage(target.getDisplayName() + " " + "has been unfrozen.");
                         } else {
