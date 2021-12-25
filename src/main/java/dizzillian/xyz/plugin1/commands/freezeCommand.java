@@ -6,12 +6,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class banCommand implements CommandExecutor {
-
+public class freezeCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (command.getName().equalsIgnoreCase("smban")){
+        if (command.getName().equalsIgnoreCase("freeze")){
 
             if(sender instanceof Player){
                 Player p = (Player) sender;
@@ -20,8 +19,9 @@ public class banCommand implements CommandExecutor {
                 }else{
                     Player target = Bukkit.getPlayerExact(args[0]);
                     if(target instanceof Player) {
-                        target.sendMessage("You've been banned on the server.");
-                        p.sendMessage(target.getDisplayName() + "has been banned.");
+                        target.setWalkSpeed(0);
+                        target.sendMessage("You've been frozen.");
+                        p.sendMessage(target.getDisplayName() + "has been frozen.");
                     }else{
                         p.sendMessage("Please insert an existing player.");
                     }

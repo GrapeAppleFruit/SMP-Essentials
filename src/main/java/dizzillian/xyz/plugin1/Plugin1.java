@@ -17,8 +17,8 @@ public final class Plugin1 extends JavaPlugin {
         getCommand("sleep").setExecutor(new sleepCommand());
         getCommand("healme").setExecutor(new heallCommand());
         getCommand("feedme").setExecutor(new feedCommand());
-        getCommand("smkick").setExecutor(new kickCommand());
         getCommand("smban").setExecutor(new banCommand());
+        getCommand("freeze").setExecutor(new freezeCommand());
 
     }
 
@@ -27,4 +27,6 @@ public final class Plugin1 extends JavaPlugin {
         // Plugin shutdown logic
         System.out.println("Fine I'm turning off, rude.");
     }
+
+
 }

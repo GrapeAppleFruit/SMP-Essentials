@@ -10,6 +10,5 @@ public class playercantsleep implements Listener {
     @EventHandler
     public void onPlayerSleep (PlayerBedEnterEvent e){
         e.getPlayer().sendMessage("Do /sleep please.");
-        e.getBed().breakNaturally();
     }
 }

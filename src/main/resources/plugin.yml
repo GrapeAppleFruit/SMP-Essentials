@@ -16,5 +16,8 @@ commands:
     description: Kick players out of your smp.
     permission: op
   smban:
-    description: Freeze players who are not apart of the smp.
+    description: .
+    permission: op
+  freeze:
+    description: Freeze the player
     permission: op
