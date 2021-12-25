@@ -19,6 +19,7 @@ public final class Plugin1 extends JavaPlugin {
         getCommand("feedme").setExecutor(new feedCommand());
         getCommand("smban").setExecutor(new banCommand());
         getCommand("freeze").setExecutor(new freezeCommand());
+        getCommand("unfreeze").setExecutor(new unfreezeCommand());
 
     }
 

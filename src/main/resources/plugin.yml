@@ -19,5 +19,8 @@ commands:
     description: .
     permission: op
   freeze:
-    description: Freeze the player
+    description: Freeze a player.
+    permission: op
+  unfreeze:
+    description: Unfreeze a player.
     permission: op

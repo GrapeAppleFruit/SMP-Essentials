@@ -17,6 +17,6 @@ public class playerJoin implements Listener {
     }
 
     public void playerLeave(PlayerQuitEvent e) {
-        e.setQuitMessage("GoodBye" + "" + e.getPlayer().getDisplayName() + "" + "Have a good day. :(");
+        e.setQuitMessage("GoodBye" + " " + e.getPlayer().getDisplayName() + " " + "Have a good day. :(");
     }
 }
