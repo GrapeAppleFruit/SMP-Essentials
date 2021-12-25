@@ -6,4 +6,8 @@ this plugin adds basic and advanced essential commands to your needs and your pl
 commands: /feedme /healme /sleep /freeze /unfreeze
 
 
+
+test commands: /reload /test
+
+
 this plugin is still in development
