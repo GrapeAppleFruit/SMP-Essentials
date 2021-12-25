@@ -24,3 +24,8 @@ commands:
   unfreeze:
     description: Unfreeze a player.
     permission: op
+  test:
+    description: Test from config.
+  smreload:
+    description: Relaods smp essentials.
+    permission: op
