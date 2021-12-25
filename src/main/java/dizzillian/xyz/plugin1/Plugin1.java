@@ -27,6 +27,7 @@ public final class Plugin1 extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
         System.out.println("Fine I'm turning off, rude.");
+        System.out.println("Cya next server startup!");
     }
 
 
