@@ -1,0 +1,14 @@
+name: Plugin1
+version: '${project.version}'
+main: dizzillian.xyz.plugin1.Plugin1
+api-version: 1.18
+commands:
+  sleep:
+    description: Sleep by using this command.
+    permission: op
+  healme:
+    description: Heal yourself.
+    permission: op
+  feedme:
+    description: Feed yourself.
+    permission: op
