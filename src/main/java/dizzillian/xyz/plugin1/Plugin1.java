@@ -25,12 +25,16 @@ public final class Plugin1 extends JavaPlugin {
         getCommand("unfreeze").setExecutor(new unfreezeCommand());
         getCommand("test").setExecutor(new testCommand());
         getCommand("smreload").setExecutor(new reloadCommand());
+        getCommand("smkick").setExecutor(new kickCommand());
+        getCommand("smban").setExecutor(new banCommand());
+        getCommand("death").setExecutor(new testCommand());
 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
         customConfig.setup();
         customConfig.get().addDefault("Message", "This is default message.");
+        customConfig.get().addDefault("True/False", "false");
         customConfig.get().options().copyDefaults(true);
         customConfig.save();
 

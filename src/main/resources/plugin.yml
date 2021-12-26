@@ -29,3 +29,7 @@ commands:
   smreload:
     description: Relaods smp essentials.
     permission: op
+  death:
+    description: testing death from config.
+    permission: op
+

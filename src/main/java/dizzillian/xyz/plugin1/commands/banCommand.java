@@ -1,6 +1,7 @@
 package dizzillian.xyz.plugin1.commands;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -13,22 +14,11 @@ public class banCommand implements CommandExecutor {
 
         if (command.getName().equalsIgnoreCase("smban")){
 
-            if(sender instanceof Player){
-                Player p = (Player) sender;
-                if(args.length == 0) {
-                    p.sendMessage("You can't use this on yourself, really?.");
-                }else{
-                    Player target = Bukkit.getPlayerExact(args[0]);
-                    if(target instanceof Player) {
-                        target.sendMessage("You've been banned on the server.");
-                        p.sendMessage(target.getDisplayName() + "has been banned.");
-                    }else{
-                        p.sendMessage("Please insert an existing player.");
-                    }
-
-                }
-
-
+            if(Bukkit.getPlayer(args[1]) != null) {
+                Bukkit.banIP(Bukkit.getPlayer(args[1]).getAddress().toString());
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aBanned Player Succesfully"));
+            }else {
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cPlayer Does Not Exist"));
             }
 
 
